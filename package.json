@@ -1,0 +1,36 @@
+{
+  "name": "greenfox-express",
+  "version": "0.0.5",
+  "description": "A simple Greenfox Express.js web application.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjurach/greenfox-express"
+  },
+  "keywords": [
+    "stormpath",
+    "express",
+    "example",
+    "sample",
+    "customdata",
+    "express-stormpath",
+    "web app"
+  ],
+  "author": "SL8, Inc.",
+  "license": "proprietary",
+  "bugs": {
+    "url": "https://github.com/jjurach/greenfox-express/issues"
+  },
+  "homepage": "https://github.com/jjurach/greenfox-express",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "express-stormpath": "^3.0.0",
+    "jade": "^1.11.0",
+    "winston": "0.6.x",
+    "express-winston": "0.2.x"
+  }
+}
