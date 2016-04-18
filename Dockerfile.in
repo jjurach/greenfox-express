@@ -1,0 +1,19 @@
+FROM alpine
+
+RUN apk add --update nodejs
+
+COPY server.js /opt/app/server.js
+COPY lib /opt/app/lib
+COPY node_modules /opt/app/node_modules
+
+RUN adduser -S appuser \
+  && chown -R appuser /opt/app
+
+WORKDIR /opt/app
+USER appuser
+
+%env
+
+EXPOSE 8080
+
+CMD ["node", "server.js"]
