@@ -24,9 +24,7 @@ app.locals.siteName = 'Greenfox Express Project';
  * Logger initialization.
  */
 
-var router = express.Router();
-
-router.use(expressWinston.logger({
+app.use(expressWinston.logger({
   transports: [
     new winston.transports.Console({
       json: true,
